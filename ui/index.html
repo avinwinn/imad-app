@@ -1,17 +1,39 @@
 <!doctype html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	
         <link href="/ui/style.css" rel="stylesheet" />
+        
     </head>
+    
     <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
-        </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! I am your first webapp.
-        </div>
+       <h1 align="center" ><b>Welcome to Medo-plus</b></h1>
+		<br><br>
+		<p align="center" class="fs"><b>Fill this information to LOG-IN</b></p>
+		<p align="center" class="fs">Username :
+		<input type="email" data-toggle="tooltip" data-placement="top" title="Enter the email here" name="user-name" placeholder="your name here">
+		</p>
+		<p align="center" class="fs">Password :
+		<input type="password" data-toggle="tooltip" data-placement="top" title="Enter the password here"  name="password" placeholder="password">
+		</p>
+		<br>
+		<p align="center">
+		<a href="#" role="button"  class="btn btn-secondary">Reset</a>
+		<a href="#" role="button" class="btn btn-success">Log-in</a>
+		</p>
+		<br>
+		<div>
+		    <p style="float: right">
+	    	New user ? Click here for Sign Up
+		    <a href="#" role="button" class="btn btn-primary">Sign-up</a>
+		</p>
+		</div>
+		
         <script type="text/javascript" src="/ui/main.js">
         </script>
+        
     </body>
 </html>
