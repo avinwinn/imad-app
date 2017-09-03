@@ -23,6 +23,10 @@ body {
     height: 200px;
 }
 
+.container
+{
+    width: 70%;
+}
 .fs
 {
 	font-size: 25px;
