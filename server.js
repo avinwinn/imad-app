@@ -18,10 +18,6 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 
-app.get('/ui/wallp.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'wallp.jpg'));
-});
-
 app.get('/ui/wallpaper.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'wallpaper.jpg'));
 });
