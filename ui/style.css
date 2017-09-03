@@ -30,6 +30,7 @@ body {
 
 .btn
 {
+    font-weight: bold;
 	height: 40px;
 	width: 100px;
 }
