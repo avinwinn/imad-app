@@ -32,6 +32,21 @@ app.get('/ui/signup.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'signup.html'));
 });
 
+var pool= new Pool(config);
+app.get('/test-db', function (req, res) {
+     pool.query('SELECT * FROM userdata', function(err,result){
+         if(err)
+         {
+             res.status(500).send(err.toString());
+         }
+         else
+         {
+             res.send(JSON.stringify(result));
+         }
+     });
+    
+});
+
 
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
