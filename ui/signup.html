@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	
+        <link href="/ui/style.css" rel="stylesheet" />
+        
+    </head>
+    
+    <body>
+	    <div class="container" style="margin-top: 30px">
+		    
+       		<p align="center" class="fs"><b>Fill up the New User Form</b></p>
+		<form class="fs">
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputPassword4" class="col-form-label"><b>Username</b></label>
+			      <input type="password" data-toggle="tooltip" data-placement="top" title="Enter the username accordingly" class="form-control" id="uname" placeholder="username">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="inputEmail4" class="col-form-label"><b>Full Name</b></label>
+			      <input type="text" data-toggle="tooltip" data-placement="top" title="Enter your compleate name here" class="form-control" id="name" placeholder=fullname>
+			    </div>    
+			</div>
+
+			<div class="form-group">
+				<label for="inputAddress" class="col-form-label"><b>Address</b></label>
+			    <input type="text" class="form-control" id="inputAddress" placeholder="Flat no. area">
+			</div> 
+     		 	
+			<div class="form-row">
+			    <div class="form-group col-md-6">
+				    <label for="inputCity" class="col-form-label"><b>City</b></label>
+			      <input type="text" class="form-control" id="inputCity">
+			    </div>
+				<div class="form-group col-md-4">
+					<label for="inputState" class="col-form-label"><b>State</b></label>
+			      <input type="text" id="inputState" class="form-control">
+				</div>
+				<div class="form-group col-md-2">
+					<label for="inputZip" class="col-form-label"><b>Zip</b></label>
+			      <input type="text" class="form-control" id="inputZip">
+				</div>
+			</div>
+		
+			<p>
+				<a href="#" style="float: left" role="button" class="btn btn-primary">Submit</a>
+				<a href="/" style="float: right" role="button" class="btn btn-danger">Exit</a>
+			</p>
+		</form>
+		<br>
+		    
+	    </div>
+		
+        <script type="text/javascript" src="/ui/main.js">
+        </script>
+        
+    </body>
+</html>
