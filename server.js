@@ -9,8 +9,8 @@ var config=
     user:'avinnagre',
     database:'avinnagre',
     host:'db.imad.hasura-app.io',
-    port:'5432',
-    password: process.emv.DB_PASSWORD,
+    port:'80',
+    password:process.emv.DB_PASSWORD,
 }
 
 var app = express();
@@ -40,7 +40,7 @@ app.get('/ui/signup.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'signup.html'));
 });
 
-var pool=new Pool(congig);
+var pool=new Pool(config);
 app.get('/test-db', function (req, res) {
      pool.query('select * from userdata', function(err,result){
          if(err)
