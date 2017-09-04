@@ -9,7 +9,7 @@ var config=
     user:'avinnagre',
     database:'avinnagre',
     host:'db.imad.hasura-app.io',
-    port:'80',
+    port:'5432',
     password:process.emv.DB_PASSWORD,
 }
 
