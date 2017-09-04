@@ -42,7 +42,7 @@ app.get('/ui/signup.html', function (req, res) {
 
 var pool= new Pool(config);
 app.get('/test-db', function (req, res) {
-     pool.query('select * from userdata', function(err,result){
+     pool.query('SELECT * FROM userdata', function(err,result){
          if(err)
          {
              res.status(500).send(err.toString());
