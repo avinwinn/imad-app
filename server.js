@@ -40,7 +40,7 @@ app.get('/ui/signup.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'signup.html'));
 });
 
-var pool=new Pool(config);
+var pool= new Pool(config);
 app.get('/test-db', function (req, res) {
      pool.query('select * from userdata', function(err,result){
          if(err)
