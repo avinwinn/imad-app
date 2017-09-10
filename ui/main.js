@@ -1,3 +1,6 @@
 console.log('Loaded!');
 
-document.getElementById('submit').innerHTML = "Hello JavaScript";
+function myFunction()
+{
+    alert("Hello! I am an alert box!");
+}
