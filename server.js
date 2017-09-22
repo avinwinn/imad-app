@@ -24,7 +24,7 @@ var pool = new Pool(config);
 function hash(input,salt)
 {
     //hasing isdone in this code   
-    var hashed= crypto.pdkdf2Sysnc(input,salt,10000,512,'sha512');
+    var hashed= crypto.pbkdf2Sysnc(input,salt,10000,512,'sha512');
     return hashed.toString('hex');
 }
 
