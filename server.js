@@ -72,8 +72,8 @@ app.get('/ui/medicartoon.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'medicartoon.jpg'));
 });
 
-app.get('/ui/signup.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'signup.html'));
+app.get('/ui/sign-up.php', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'sign-up.php'));
 });
 
 
